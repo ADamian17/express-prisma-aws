@@ -1,0 +1,16 @@
+{
+  "name": "express-prisma-aws",
+  "version": "1.0.0",
+  "description": "Como empezar un project con express prisma and aws",
+  "main": "server.js",
+  "repository": "git@github.com:ADamian17/express-prisma-aws.git",
+  "author": "ADamian17 <adonisdesuvikdo@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "prism": "^4.1.2"
+  }
+}
