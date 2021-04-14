@@ -50,3 +50,32 @@ export const create = async (req, res) => {
     return console.log(error);
   }
 };
+
+export const update = async (req, res) => {
+  try {
+    const updatedUser = await db.user.update({
+      where: {
+        id: Number(req.params.id),
+      },
+      data: req.body,
+    });
+
+    res.status(201).json({ updatedUser });
+  } catch (error) {
+    return console.log(error);
+  }
+};
+
+export const destroy = async (req, res) => {
+  try {
+    const deletedUser = await db.user.delete({
+      where: {
+        id: Number(req.params.id),
+      },
+    });
+
+    res.status(200).json({ deletedUser });
+  } catch (error) {
+    return console.log(error);
+  }
+};
