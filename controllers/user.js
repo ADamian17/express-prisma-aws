@@ -1,12 +1,6 @@
 import prisma from '@prisma/client';
 
-const db = new prisma.PrismaClient({
-  log: ['info', 'error'],
-});
-
-db.$on('info', (e) => console.log(e.message));
-
-db.$on('error', (e) => console.log(e.message));
+const db = new prisma.PrismaClient();
 
 export const index = async (req, res) => {
   try {
