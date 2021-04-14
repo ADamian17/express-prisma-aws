@@ -86,3 +86,13 @@ Next steps:
 More information in our documentation:
 https://pris.ly/d/getting-started
 ```
+
+<h3>Connecting to the DataBase</h3>
+
+aws....
+
+<h3>Update .env</h3>
+
+```
+DATABASE_URL="mysql://<your user name>:< your password >@<your connection string>/< db name>?schema=public"
+```
